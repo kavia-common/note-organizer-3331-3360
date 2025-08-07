@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2D3748;
+  --color-secondary: #4FD1C5;
+  --color-accent: #F6E05E;
+  --color-background: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--color-background);
+  color: var(--color-primary);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #F7FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+/* Utility classes for consistent usage */
+.bg-primary    { background: var(--color-primary);}
+.bg-secondary  { background: var(--color-secondary);}
+.bg-accent     { background: var(--color-accent);}
+.text-primary  { color: var(--color-primary);}
+.text-secondary{ color: var(--color-secondary);}
+.text-accent   { color: var(--color-accent);}
